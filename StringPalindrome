@@ -1,0 +1,28 @@
+class Main {
+    public static void main(String[] args) {
+        String a = "madam";
+        int l = 0;
+        int r = a.length() - 1;
+        boolean flag = false;
+        
+        while (l < r) {
+            char l1 = a.charAt(l);
+            char r1 = a.charAt(r);
+            
+            if (l1 == r1) {  
+                l++;  // Increment the left index
+                r--;  // Decrement the right index
+                flag = true;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+        
+        if (flag) {
+            System.out.println("palindrome");
+        } else {
+            System.out.println("not palindrome");
+        }
+    }
+}
