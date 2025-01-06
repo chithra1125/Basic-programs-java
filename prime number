@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class prime_numbers
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int a=scanner.nextInt();
+        int count=2;
+        int sum=0;
+        for(int i=1;i<=a;i++)
+        {
+            if(a%i==0)
+            {
+                sum++;
+            }
+        }
+        if(count==sum)
+        {
+            System.out.println("prime nnumber");
+        }
+        else
+        {
+            System.out.println("not prime number");
+        }
+        
+    }
+}
