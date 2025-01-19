@@ -1,0 +1,67 @@
+package Arrays;
+import java.util.Scanner;
+import java.util.HashSet;
+
+public class Count 
+{
+    Scanner sc=new Scanner(System.in);
+    void meth1()
+    {
+        /* NUMBER OF ELEMENTS IN AN ARRAY */
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        int count=0;
+        for(int i=0;i<n;i++)
+        {
+            count++;
+        }
+        System.out.println("The number of elements in an array "+count);
+    }
+    void meth2()
+    {
+        /* NUMBER OF EVEN AND ODD ELEMENTS IN AN ARRAY */
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        arr[i]=sc.nextInt();
+        int e_count=0;
+        int o_count=0;
+        for(int i=0;i<n;i++)
+        {
+            if (arr[i]%2==0)
+            {
+               e_count++;
+            }
+            else{
+                o_count++;
+            }
+        }
+        System.out.println("The number of Even elements "+e_count);
+        System.out.println("The number of odd elements "+o_count);
+    }
+    void meth3()
+    {
+        /* NUMBER OF DISTINCT ELEMENTS IN AN ARRAY */
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        arr[i]=sc.nextInt();
+        HashSet<Integer> set=new HashSet<Integer>();
+        for(int i=0;i<n;i++)
+        {
+            set.add(arr[i]);
+        }
+        System.out.println("The number of distinct elements in array "+set.size());
+    }
+    public static void main(String []args)
+    {
+        Count obj=new Count();
+        obj.meth1();
+        obj.meth2();
+        obj.meth3();
+    }    
+}
