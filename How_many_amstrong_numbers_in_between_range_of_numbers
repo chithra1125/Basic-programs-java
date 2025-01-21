@@ -1,0 +1,39 @@
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int lower=100;
+        int higher=200;
+        for(int i=lower;i<=higher;i++)
+        {
+            if(isAmstrong(i))
+            {
+                System.out.println(i);
+            }
+        }
+    }
+     
+     static boolean isAmstrong(int n)
+     {
+         int no_of_digits=0;
+         int num=n;
+         while(n>0)
+         {
+             int digit=n%10;
+             no_of_digits++;
+             n=n/10;
+         }
+         int temp=num;
+         int count=0;
+         while(temp>0)
+         {
+             int digits1=temp%10;
+             count=(int)Math.pow(digits1,no_of_digits)+count;
+             temp=temp/10;
+         }
+         if(num==count){
+             return true;
+         }
+          return false;
+     }
+}
