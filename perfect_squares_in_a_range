@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Main
+{
+    static boolean perfect_Square(int n)
+    {
+        if(n>=0)
+        {
+            int str=(int)Math.sqrt(n);
+            return (str*str == n);
+        }
+        return false;
+    }
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the lower value:");
+        int lower= scanner.nextInt();
+        System.out.println("Enter the hihger value:");
+        int higher= scanner.nextInt();
+        System.out.println("In between the range the perfect squares are:");
+       for(int i=lower;i<=higher;i++)
+       {
+           if(perfect_Square(i))
+           {
+               System.out.println(i);
+           }
+       }
+    }
+}
