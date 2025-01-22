@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Perfect_Square
+{
+static boolean perfect_square(int x)
+{
+if(x>=0)
+{
+int str=(int)Math.sqrt(x);
+return (str*str == x);
+}
+return false;
+}
+public static void main(String[] args)
+{
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter a Number");
+int x= scanner.nextInt();
+if(perfect_square(x))
+{
+System.out.println("Yes,It is a perfect square");
+}
+else
+{
+System.out.println("No,It is not a perfect square");
+}
+}
+}
