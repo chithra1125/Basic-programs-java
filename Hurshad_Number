@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Main
+{
+    static boolean hurshad_number(int n)
+    {
+         int count=0;
+         int num=n;
+         while(num>0)
+    {
+        int digit=num%10;
+        count=count+digit;
+        num=num/10;
+    }
+        if(n>=0)
+        {
+        int str=n%(count);
+        return (str==0);
+        }
+        return false;
+    }
+    public static void main(String[] args)
+    {
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=scanner.nextInt();
+        if(hurshad_number(n))
+        {
+            System.out.println("Yes it is a hurshad Number");
+        }
+        else
+        {
+            System.out.println("No it is not a hurshad number");
+        }
+    }
+}
