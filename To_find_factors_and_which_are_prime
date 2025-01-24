@@ -1,0 +1,36 @@
+public class to_find_factors_and_which_r_prime
+{
+    public static void main(String[] args)
+    {
+        int n=6;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            { 
+            if(isPrime(i))
+            {
+                System.out.println(i);
+            }
+            }
+        }
+    }
+    static boolean isPrime(int num)
+    {
+        if (num<=1)
+        {
+        return false;
+        }
+        if (num==2) 
+        {
+            return true;
+        }
+        for(int i=3;i<num;i++)
+        {
+            if(num%i==0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
