@@ -1,0 +1,21 @@
+package Recursion;
+import java.util.Scanner;
+/* In this code we are printing the numbers from Using RECURSION */
+
+public class Basic 
+{
+    static void printNum(int n)
+    {
+        if(n==0)
+        return;
+        System.out.print(n+" ");
+        printNum(n-1);
+    }
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        printNum(n);
+        sc.close();
+    }
+}
