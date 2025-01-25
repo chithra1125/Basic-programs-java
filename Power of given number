@@ -1,0 +1,25 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Power 
+{
+    static int answer=1;
+    public static void meth(int n,int pow)
+    {
+        if(pow==0)
+        {
+            System.out.println("The power of a number by Using RECURSION :"+answer);
+            return;
+        }
+        answer=answer*n;
+        meth(n,pow-1);
+    }
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);    
+        int n=sc.nextInt();
+        int pow=sc.nextInt();
+        meth(n,pow);
+        sc.close();
+    }
+}
