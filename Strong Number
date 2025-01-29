@@ -1,5 +1,14 @@
 package Recursion;
 import java.util.Scanner;
+/*
+Example
+Input : 145
+Output : Yes, it's a strong number
+Explanation : Number = 145
+145 = 1! + 4! + 5!
+145 = 1 + 24 + 120
+output number  = 145.
+*/
 
 public class Strong 
 {
