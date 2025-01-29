@@ -1,0 +1,53 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Strong 
+{
+    static int i=1;
+    
+    static void finder(int org,int sum,int dup)
+    {
+        int n=1;
+        if(org<0)
+        {
+            if(sum==dup)
+            {
+                System.out.println(sum);
+                System.out.println(dup);
+            System.out.println("The given number is Strong number ");
+            }
+            else
+            {
+                System.out.println(sum);
+                System.out.println(dup);
+                System.out.println("The given number is not a Strong Number ");
+            }
+            return;
+        }
+        int fact=1;
+        n=org%10;
+        if(n==0)
+        {
+            fact=1;
+        }
+        else
+        {
+           while(n>=i)
+           {
+              fact=fact*i;
+              i++;
+           }
+        }
+        sum=sum+fact;
+        System.out.println(sum+" "+fact+" "+n);
+        System.out.println("\n");
+        finder(n/10,sum,dup);
+    }        
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        finder(n,0,n);
+        sc.close();
+    }    
+}
