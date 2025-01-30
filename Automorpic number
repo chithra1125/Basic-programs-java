@@ -2,6 +2,7 @@ package Recursion;
 import java.util.Scanner;
 /*
 EXPLANANTION :
+THIS CODE IS IN THE RECURSION NOT IN TH LOOP 
 */
 public class Automorpic 
 {
