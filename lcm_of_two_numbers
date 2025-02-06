@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class lcm_of_two_numbers
+{
+    public static void main(String[] args)
+     {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter first number:");
+        int a=scanner.nextInt();
+        System.out.println("Enter second number:");
+        int b=scanner.nextInt();
+        int gcd1=gcd(a,b);
+        int lcm=(a*b)/gcd1;
+        System.out.println("The lcm of two numbers is:"+ lcm);
+    }
+
+     static int gcd(int a,int b)
+    {
+        while(b>0)
+        {
+            int temp=b;
+            b=a%b;
+            a=temp;
+        }
+        return a;
+    }
+}
