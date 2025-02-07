@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+       Scanner scanner=new Scanner(System.in);
+       System.out.println("Enter a how many numbers:");
+       int n=scanner.nextInt();
+       System.out.println("Enter the first term:");
+        int first_term=scanner.nextInt();
+        System.out.println("Enter the second term:");
+        int second_term=scanner.nextInt();
+        System.out.println("The fibonnaci series is:");
+        if(n==1)
+        {
+            System.out.println(second_term);
+        }
+        else if(n<=0)
+        {
+            System.out.println("Enter a positive number");
+        }
+        else
+        {
+            System.out.println(first_term);
+            System.out.println(second_term);
+     for(int i=3;i<=n;i++)
+        {
+             int next =first_term + second_term;
+             System.out.println(next);
+             first_term=second_term;
+             second_term=next;
+               
+        }
+    }
+    }
+}
