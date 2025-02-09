@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main
+{
+    static int  myMethod(int a,int b)
+    {
+       return a+b;
+    }
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the value:");
+       int a=scanner.nextInt();
+       System.out.println("Enter the value:");
+       int b=scanner.nextInt();
+       System.out.println("The sum of two numbers is:"+myMethod(a,b));
+    }
+}
