@@ -1,3 +1,12 @@
+/*
+Expalnation:
+
+In this JAVA program we will be coding a star box pattern which will have n number of stars in it rows and n 
+of stars in column hence it will be a n x n square star pattern  . The user will input a value, that will be 
+used for determining the number of rows and columns of the pattern, and than we will use “for loop”,
+ for printing stars at the desired places
+*/
+
 import java.util.*;
 
 public class Square 
