@@ -1,3 +1,12 @@
+/*
+Explanation:
+In this program we’re going to code a java program for hollow square star pattern program.
+ A hollow square star pattern is one with star only on its boundaries and free space on all other places.
+Take a input from user, for determining the number of rows and columns, and store it
+ in the variable named as row and col, respectively and then write a “for loop” starting from 
+i=1 to i<=row and then take another for loop to start from j=1 to j<=col and then we’ll use a 
+ if statement “if(i==1 or i==col) or (j==1 or j==col)” for printing the stars on the desired places.
+*/
 import java.util.*;
 
 public class Hallow 
