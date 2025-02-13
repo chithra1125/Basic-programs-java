@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class leap_year_or_not
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a year:");
+        int year=scanner.nextInt();
+        if(year%4==0 && year%100!=0)
+        {
+            System.out.println("the given year is leap year");
+        }
+        else if(year%400==0 && year%100!=0)
+        {
+            System.out.println("The given year is leap year");
+        }
+        else
+        {
+            System.out.println("not leap year");
+        }
+        
+    }
+}
