@@ -1,7 +1,7 @@
 package Recursion;
 import java.util.Scanner;
 
-public class Power 
+public class Power
 {
     static int answer=1;
     public static void meth(int n,int pow)
