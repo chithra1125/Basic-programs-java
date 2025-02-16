@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class sum_of_first_N_natural_numbers
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=scanner.nextInt();
+        System.out.println("Sum of " +n+" natural numbers are:");
+        method(n); 
+    }
+    static void method(int n)
+    {
+        int b=n*(n+1)/2;
+        System.out.println(b);
+    }
+
+
+}
