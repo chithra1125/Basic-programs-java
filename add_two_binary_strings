@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class add_two_binary_strings {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter binary1:");
+        String binary1=scanner.nextLine();
+        System.out.println("Enter binary2: ");
+        String binary2=scanner.nextLine();
+        int c=Integer.parseInt(binary1,2);
+        int d=Integer.parseInt(binary2,2);
+        int e=c+d;
+        String binarySum=Integer.toBinaryString(e);
+        System.out.println("The sum of binary1 and binary2 is:"+ binarySum);
+        scanner.close();
+    }
+}
