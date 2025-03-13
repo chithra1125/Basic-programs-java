@@ -10,4 +10,4 @@ class class Compound_interest
 		
 		System.out.println("Compound Interest is "+ CI); 
 	} 
-} 
+}
