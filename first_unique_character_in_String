@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main
+{
+public int firstUniqChar(String s)
+{
+char arr[]=s.toCharArray();
+for(int i=0;i<arr.length;i++)
+{
+boolean found=false;
+for(int j=0;j<arr.length;j++)
+{
+if(arr[i]==arr[j] && i!=j)
+{
+found=true;
+break;
+}
+}
+if(found==false)
+{
+return i;
+}
+}
+return -1;
+}
+public static void main(String[] args)
+{
+Scanner scanner=new Scanner(System.in);
+String s=scanner.nextLine();
+Main obj=new Main();
+System.out.println(obj.firstUniqChar( s);
+}
+}
