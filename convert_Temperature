@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Solution {
+    public double[] convertTemperature(double celsius) {
+        double arr[]=new double[2];
+        arr[0]=celsius+273.15;
+        arr[1]=celsius*1.80+32;
+        return arr;
+    }
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        double celsius=scanner.nextInt();
+        System.out.println(new Solution().convertTemperature(celsius));
+    }
+}
