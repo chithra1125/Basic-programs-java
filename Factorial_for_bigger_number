@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.math.BigInteger;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a number:");
+        int n=scanner.nextInt();
+         System.out.println(fact(n));
+    }
+    static BigInteger fact(int n)
+    {
+        if(n==1 || n==0)
+        {
+            return BigInteger.ONE;
+        }
+        else
+        {
+            return BigInteger.valueOf(n).multiply(fact(n-1));
+        }
+    }
+}
