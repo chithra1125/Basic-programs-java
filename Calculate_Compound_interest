@@ -2,7 +2,7 @@ class class Compound_interest
 {
 	public static void main(String args[]) 
 	{ 
-		double principal = 10000, rate = 10.25, time = 5; 
+		double principal = 10000, rate = 10.25, time = 5;
 
 		/* Calculate compound interest */
 		double CI = principal * 
